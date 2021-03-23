@@ -15,6 +15,7 @@
 		F4264666260A518E00A75EA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4264664260A518E00A75EA8 /* LaunchScreen.storyboard */; };
 		F4264671260A518E00A75EA8 /* Quiz_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4264670260A518E00A75EA8 /* Quiz_AppTests.swift */; };
 		F426467C260A518E00A75EA8 /* Quiz_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426467B260A518E00A75EA8 /* Quiz_AppUITests.swift */; };
+		F426468D260A5B9700A75EA8 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426468C260A5B9700A75EA8 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		F4264677260A518E00A75EA8 /* Quiz AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quiz AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F426467B260A518E00A75EA8 /* Quiz_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz_AppUITests.swift; sourceTree = "<group>"; };
 		F426467D260A518E00A75EA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F426468C260A5B9700A75EA8 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				F4264662260A518E00A75EA8 /* Assets.xcassets */,
 				F4264664260A518E00A75EA8 /* LaunchScreen.storyboard */,
 				F4264667260A518E00A75EA8 /* Info.plist */,
+				F426468C260A5B9700A75EA8 /* Question.swift */,
 			);
 			path = "Quiz App";
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F426465E260A518D00A75EA8 /* ViewController.swift in Sources */,
+				F426468D260A5B9700A75EA8 /* Question.swift in Sources */,
 				F426465A260A518D00A75EA8 /* AppDelegate.swift in Sources */,
 				F426465C260A518D00A75EA8 /* SceneDelegate.swift in Sources */,
 			);
