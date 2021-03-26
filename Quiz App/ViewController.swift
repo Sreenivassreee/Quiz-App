@@ -40,12 +40,19 @@ class ViewController: UIViewController {
 
     @IBAction func presed(_ sender: UIButton) {
         print(sender.currentTitle!)
-        
-        if questionNumber+1 < questions.count{
         let actualAnswer=questions[questionNumber].answer
         let pressedAnswer=sender.currentTitle!
         
+        if questionNumber+1 < questions.count{
+       
+        
         questionNumber += 1
+        
+        
+        }else{
+            questionNumber=0
+        }
+        
         if actualAnswer==pressedAnswer{
             sender.backgroundColor=UIColor.green
         }else{
@@ -54,9 +61,6 @@ class ViewController: UIViewController {
         
         Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
         
-        }else{
-            questionNumber=0
-        }
     }
     
     @objc func updateUI(){
@@ -64,7 +68,7 @@ class ViewController: UIViewController {
             TrueBtn.backgroundColor=UIColor.clear
             FalseBtn.backgroundColor=UIColor.clear
             QustionPlace.text=questions[questionNumber].text
-            ProgressBar.progress=Float(questionNumber)/Float(questions.count)
+            ProgressBar.progress=Float(questionNumber+1)/Float(questions.count)
         
 
 

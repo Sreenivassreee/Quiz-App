@@ -18,11 +18,11 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jg0-YV-RIC">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fEx-l1-aGO">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fEx-l1-aGO">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="324"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Welcome to Quiz" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="icE-ZI-fQp">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="265"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Welcome to Quiz" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="icE-ZI-fQp">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="324"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -61,8 +61,8 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jfG-Bj-dqq">
                                                 <rect key="frame" x="0.0" y="156" width="300" height="68"/>
                                                 <subviews>
-                                                    <progressView opaque="NO" contentMode="center" verticalHuggingPriority="750" ambiguous="YES" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="8E2-6h-VmE">
-                                                        <rect key="frame" x="0.0" y="21" width="300" height="2.5"/>
+                                                    <progressView opaque="NO" contentMode="center" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="8E2-6h-VmE">
+                                                        <rect key="frame" x="0.0" y="21" width="300" height="6"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="5" id="Owo-gH-SO2"/>
                                                         </constraints>
@@ -71,13 +71,13 @@
                                                     </progressView>
                                                 </subviews>
                                                 <constraints>
+                                                    <constraint firstItem="8E2-6h-VmE" firstAttribute="top" secondItem="jfG-Bj-dqq" secondAttribute="top" constant="21" id="Iu5-65-577"/>
                                                     <constraint firstAttribute="trailing" secondItem="8E2-6h-VmE" secondAttribute="trailing" id="bzd-6z-BMA"/>
                                                     <constraint firstItem="8E2-6h-VmE" firstAttribute="leading" secondItem="jfG-Bj-dqq" secondAttribute="leading" id="rxY-7d-oBH"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="jfG-Bj-dqq" secondAttribute="bottom" constant="10" id="0Pd-2e-Mx9"/>
                                             <constraint firstItem="jfG-Bj-dqq" firstAttribute="leading" secondItem="H8d-u5-L3y" secondAttribute="leading" id="dS3-2L-qQt"/>
                                             <constraint firstAttribute="trailing" secondItem="jfG-Bj-dqq" secondAttribute="trailing" id="ePQ-oR-e9A"/>
                                             <constraint firstItem="jfG-Bj-dqq" firstAttribute="top" secondItem="8w3-OX-B8V" secondAttribute="bottom" constant="10" id="qDU-5m-475"/>
@@ -86,7 +86,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="fEx-l1-aGO" secondAttribute="trailing" id="EoW-gF-xC8"/>
-                                    <constraint firstItem="H8d-u5-L3y" firstAttribute="top" secondItem="fEx-l1-aGO" secondAttribute="bottom" id="Lzq-vv-aME"/>
+                                    <constraint firstItem="H8d-u5-L3y" firstAttribute="top" secondItem="fEx-l1-aGO" secondAttribute="bottom" constant="20" id="ZBL-V8-sI7"/>
                                     <constraint firstItem="H8d-u5-L3y" firstAttribute="leading" secondItem="jg0-YV-RIC" secondAttribute="leading" constant="10" id="iMe-yT-U1y"/>
                                     <constraint firstAttribute="trailing" secondItem="H8d-u5-L3y" secondAttribute="trailing" constant="10" id="mD4-DV-5WG"/>
                                     <constraint firstItem="fEx-l1-aGO" firstAttribute="top" secondItem="jg0-YV-RIC" secondAttribute="top" id="q2P-QH-0nA"/>
